@@ -1,0 +1,6 @@
+- ## Core Concepts
+    - [Jobs](/docs/{{version}}/jobs)
+    - [Customers](/docs/{{version}}/customers)
+    - [Sites](/docs/{{version}}/sites)
+    - [HVACR Systems](/docs/{{version}}/hvacr-systems)
+    - [File Attachments](/docs/{{version}}/file-attachments)
