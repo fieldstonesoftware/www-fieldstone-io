@@ -1,4 +1,4 @@
-# Learn to use Fieldstone
+# Learn Fieldstone
 
 - [Overview](#overview)
 - [Sample ](#sample1)
