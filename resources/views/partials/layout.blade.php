@@ -51,7 +51,7 @@
                     <h2>Join the Fieldstone Beta</h2>
                     <p>Be one of the first to use Fieldstone 2.0 by joining our closed Beta program. We'd love to have your input to help improve Fieldstone!</p>
                 </div>
-                <a href="https://pro.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
+                <a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
             </section>
         </div>
 

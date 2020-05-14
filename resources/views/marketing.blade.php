@@ -8,7 +8,7 @@
             <div class="content_contain" style="padding-bottom: 4.5em;">
                 <div class="page_contain">
                     <div class="banner">
-                        <a href="https://pro.fieldstone.io/register/">
+                        <a href="https://staging.fieldstone.io/register/">
                             <div class="banner_icon">
                                 <img src="/img/logomark.min.svg" alt="Fieldstone">
                             </div>
@@ -31,7 +31,7 @@
                                 <p>Fieldstone is a Cloud platform for small HVAC businesses that helps them organize daily operations so they can reduce paperwork and focus on serving customers.</p>
                                 <div class="hero_actions" style="z-index: -999;">
                                     <a href="/docs" class="btn"><span>Documentation</span></a>
-                                    <a href="https://pro.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
+                                    <a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
 {{--                                    <a href="https://link-to-another-resource" data-remodal-target="video_modal" class="btn secondary"><span><img src="/img/icons/play.min.svg" alt="Play Video"><span>Watch Demos</span></span></a>--}}
 
 <!--                                     <div data-remodal-id="video_modal" class="video_modal remodal">
