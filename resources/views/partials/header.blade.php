@@ -8,7 +8,7 @@
             <nav class="main">
                 <div class="nav_contain">
                     <ul>
-                        <li class="docs_link"><a href="/docs">Docs</a></li>
+                        <li class="docs_link"><a href="/docs">Learn</a></li>
 {{--                        <li class="partners_link"><a href="/partners">Partners</a></li>--}}
                     </ul>
                 </div>
