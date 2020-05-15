@@ -30,7 +30,7 @@
                                 <h1>Service Management<br> for HVAC Business</h1>
                                 <p>Fieldstone is a Cloud platform for small HVAC businesses that helps them organize daily operations so they can reduce paperwork and focus on serving customers.</p>
                                 <div class="hero_actions" style="z-index: -999;">
-                                    <a href="/docs" class="btn"><span>Documentation</span></a>
+                                    <a href="/docs" class="btn"><span>Learn More</span></a>
                                     <a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
 {{--                                    <a href="https://link-to-another-resource" data-remodal-target="video_modal" class="btn secondary"><span><img src="/img/icons/play.min.svg" alt="Play Video"><span>Watch Demos</span></span></a>--}}
 
@@ -59,7 +59,7 @@
                                 <p>Version 1.x of Fieldstone included cloud access which worked great for
                                 in-office staff. For working on-the-go, it was less than ideal. To address
                                 this, we're adding mobile apps to version 2.0.</p>
-                                <a href="#" class="btn"><span>TODO: Learn More</span></a>
+                                <a href="/docs" class="btn"><span>Learn More</span></a>
                             </div>
                         </div>
 

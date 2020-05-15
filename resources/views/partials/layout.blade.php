@@ -83,11 +83,13 @@
                     <div class="footer_info">
                         <p class="small"></p>
                         <p class="small">Fieldstone is a Cloud platform for small HVAC businesses that helps them organize daily operations so they can reduce paperwork and focus on serving their customers.</p>
-                        <p class="small copyright">Fieldstone is a Trademark of Fieldstone Software, LLC.<br>Copyright &copy; 2006-{{now()->format('Y')}} Fieldstone Software LLC.
+                        <p class="small copyright">Fieldstone is a Trademark of Fieldstone Software, LLC.<br>Copyright &copy; 2006-{{now()->format('Y')}} Fieldstone Software LLC.</p>
+                        <p class="small">
+                            <a href="/docs/{{DEFAULT_VERSION}}/legal-terms-of-use">Terms of Use</a>
+                            &nbsp;&nbsp;<a href="/docs/{{DEFAULT_VERSION}}/legal-privacy-policy">Privacy Policy</a>
                         </p>
                         <ul class="social_links">
-                            <li><a target="_blank" href="https://www.facebook.com/fieldstonesm/"><img src="/img/social/facebook.min.svg" alt="Facebook"></a>
-                            </li>
+                            <li><a target="_blank" href="https://www.facebook.com/fieldstonesm/"><img src="/img/social/facebook.min.svg" alt="Facebook"></a></li>
                         </ul>
                     </div>
                 </div>
