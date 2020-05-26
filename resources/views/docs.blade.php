@@ -38,8 +38,8 @@
                             @unless (in_array($currentVersion, [DEFAULT_VERSION, '2.x']))
                                 <blockquote>
                                     <div class="callout">
-                                        <div class="icon orange">
-                                            <img src="{{ asset('/img/callouts/exclamation.min.svg') }}" alt="Icon"/>
+                                        <div class="icon red">
+                                            <img src="{{ asset('/img/icons/close.min.svg') }}" alt="Icon"/>
                                         </div>
 
                                         <p class="content">
