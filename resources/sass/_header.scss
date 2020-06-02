@@ -55,6 +55,12 @@ header.main {
         }
     }
 
+    .cta_mobile {
+        a {
+            font-size: 14px;
+        }
+    }
+
     .search_box {
         position: relative;
         z-index: 10;
@@ -135,6 +141,12 @@ header.main {
 
             .type {
                 display: block;
+            }
+        }
+
+        .cta_mobile {
+            a {
+                font-size: 16px;
             }
         }
     }

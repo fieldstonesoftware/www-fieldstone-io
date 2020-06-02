@@ -13,7 +13,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="cta">
+            <div class="cta cta_mobile">
                 <div class="input_group">
                     <a href="https://staging.fieldstone.io/login" class="btn"><span>Login</span></a>
                     &nbsp;<a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
