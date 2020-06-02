@@ -32,6 +32,7 @@ header.main {
 
         .mark {
             margin-right: 1em;
+            max-width: 2em;
         }
 
         .type {
@@ -52,6 +53,12 @@ header.main {
             a {
                 display:inline-block;
             }
+        }
+    }
+
+    .cta_mobile {
+        a {
+            font-size: 14px;
         }
     }
 
@@ -133,8 +140,17 @@ header.main {
         .logo {
             margin-right: 1.25em;
 
+            .mark {
+                max-width: 3em;
+            }
             .type {
                 display: block;
+            }
+        }
+
+        .cta_mobile {
+            a {
+                font-size: 16px;
             }
         }
     }
@@ -206,7 +222,7 @@ header.main {
 
     @include fl-break(80em) {
         .logo {
-            margin-right: 4.5%;
+            margin-right: 10%;
         }
     }
 }

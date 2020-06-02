@@ -2,7 +2,7 @@
     <div class="contain">
         <div class="header_content">
             <a href="/" class="logo">
-                <img class="mark" src="/img/logomark.min.svg" alt="Fieldstone" style="min-width:3em;">
+                <img class="mark" src="/img/logomark.min.svg" alt="Fieldstone">
                 <img class="type" src="/img/logotype.min.svg" alt="Fieldstone" style="min-width:10em;">
             </a>
             <nav class="main">
@@ -13,7 +13,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="cta">
+            <div class="cta cta_mobile">
                 <div class="input_group">
                     <a href="https://staging.fieldstone.io/login" class="btn"><span>Login</span></a>
                     &nbsp;<a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
