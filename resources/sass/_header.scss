@@ -32,6 +32,7 @@ header.main {
 
         .mark {
             margin-right: 1em;
+            max-width: 2em;
         }
 
         .type {
@@ -139,6 +140,9 @@ header.main {
         .logo {
             margin-right: 1.25em;
 
+            .mark {
+                max-width: 3em;
+            }
             .type {
                 display: block;
             }

@@ -2,7 +2,7 @@
     <div class="contain">
         <div class="header_content">
             <a href="/" class="logo">
-                <img class="mark" src="/img/logomark.min.svg" alt="Fieldstone" style="min-width:3em;">
+                <img class="mark" src="/img/logomark.min.svg" alt="Fieldstone">
                 <img class="type" src="/img/logotype.min.svg" alt="Fieldstone" style="min-width:10em;">
             </a>
             <nav class="main">
