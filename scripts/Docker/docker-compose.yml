@@ -1,0 +1,31 @@
+version: '3.7'
+
+networks:
+  web-network:
+    driver: bridge
+
+services:
+  php-fpm:
+    build:
+      context: ./php-fpm
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ../../:/var/www/html
+    restart: unless-stopped
+    networks:
+      - web-network
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    tty: true
+    restart: unless-stopped
+    ports:
+      - "9090:80"
+    networks:
+      - web-network
+    volumes:
+      - ../../:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
