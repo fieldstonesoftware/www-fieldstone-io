@@ -24,7 +24,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: $red;
+            background: #78A22E;
             transition: all 0ms 300ms;
 
             &.animate {
@@ -37,7 +37,7 @@
             position: absolute;
             left: 0;
             bottom: -6px;
-            background: $red;
+            background: #78A22E;
             transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
         }
 
@@ -46,7 +46,7 @@
             position: absolute;
             left: 0;
             top: -6px;
-            background: $red;
+            background: #78A22E;
             transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
         }
 
