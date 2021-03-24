@@ -15,8 +15,8 @@
             </nav>
             <div class="cta cta_mobile">
                 <div class="input_group">
-                    <a href="https://staging.fieldstone.io/login" class="btn"><span>Login</span></a>
-                    &nbsp;<a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
+                    <a href="https://pro.fieldstone.io/login" class="btn"><span>Login</span></a>
+                    &nbsp;<a href="https://pro.fieldstone.io/register" class="btn"><span>Sign Up</span></a>
                 </div>
             </div>
             <div class="trigger_contain">

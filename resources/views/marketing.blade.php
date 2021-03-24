@@ -8,13 +8,13 @@
             <div class="content_contain" style="padding-bottom: 4.5em;">
                 <div class="page_contain">
                     <div class="banner">
-                        <a href="https://staging.fieldstone.io/register/">
+                        <a href="https://pro.fieldstone.io/register/">
                             <div class="banner_icon">
                                 <img src="/img/logomark.min.svg" alt="Fieldstone">
                             </div>
                             <div class="banner_content">
                                  <p class="small">
-                                    Fieldstone 2.0 Beta Opening Soon! Sign up today! <span class="arrow">→</span>
+                                    Fieldstone Cloud is Open! Sign up today! <span class="arrow">→</span>
                                 </p>
                             </div>
                         </a>
@@ -27,11 +27,13 @@
 {{--                                </video>--}}
                             </div>
                             <div class="hero_content">
-                                <h1>Service Management<br> for HVAC Business</h1>
-                                <p>Fieldstone is a Cloud platform for small HVAC businesses that helps them organize daily operations so they can reduce paperwork and focus on serving customers.</p>
+                                <h1>Flat Rate Price Book<br>for HVAC & Plumbing</h1>
+                                <p>Fieldstone is a Cloud platform for HVAC & Plumbing to help you organize
+                                    daily operations, reduce paperwork and improve your focus. Sign up today
+                                    to start using the flat rate price book feature.</p>
                                 <div class="hero_actions" style="z-index: -999;">
                                     <a href="/docs" class="btn"><span>Learn More</span></a>
-                                    <a href="https://staging.fieldstone.io/register" class="btn"><span>Join the Beta</span></a>
+                                    <a href="https://pro.fieldstone.io/register" class="btn"><span>Sign Up</span></a>
 {{--                                    <a href="https://link-to-another-resource" data-remodal-target="video_modal" class="btn secondary"><span><img src="/img/icons/play.min.svg" alt="Play Video"><span>Watch Demos</span></span></a>--}}
 
 <!--                                     <div data-remodal-id="video_modal" class="video_modal remodal">
