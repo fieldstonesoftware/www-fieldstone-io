@@ -28,9 +28,8 @@
                             </div>
                             <div class="hero_content">
                                 <h1>Flat Rate Price Book<br>for HVAC & Plumbing</h1>
-                                <p>Fieldstone is a Cloud platform for HVAC & Plumbing to help you organize
-                                    daily operations, reduce paperwork and improve your focus. Sign up today
-                                    to start using the flat rate price book feature.</p>
+                                <p>Fieldstone is a Cloud platform to help you organize daily operations, reduce
+                                    paperwork and improve your focus. Sign up today to start using flat rate price books.</p>
                                 <div class="hero_actions" style="z-index: -999;">
                                     <a href="/docs" class="btn"><span>Learn More</span></a>
                                     <a href="https://pro.fieldstone.io/register" class="btn"><span>Sign Up</span></a>
