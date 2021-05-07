@@ -462,11 +462,11 @@ a.btn .btn-outline:hover {
 
 .product-device {
   position: absolute;
-  right: 10%;
+  right: 5%;
   bottom: -30%;
-  width: 300px;
+  width: 250px;
   height: 540px;
-  background-color: $fsm-lt-green;
+  background-color: $fsm-dk-blue;
   border-radius: 21px;
   transform: rotate(30deg);
 }
@@ -478,7 +478,7 @@ a.btn .btn-outline:hover {
   bottom: 10%;
   left: 10px;
   content: "";
-  background-color: rgba(255, 255, 255, .1);
+  background-color: $fsm-lt-green;
   border-radius: 5px;
 }
 
@@ -486,8 +486,8 @@ a.btn .btn-outline:hover {
   top: -25%;
   right: auto;
   bottom: 0;
-  left: 5%;
-  background-color: $fsm-neutral-gray;
+  left: 0;
+  background-color: $fsm-dk-blue;
 }
 
 /*
@@ -520,4 +520,29 @@ a.btn .btn-outline:hover {
 #docs-nav ul li a:hover, #docs-nav ul li a:focus {
   color: black;
   font-weight: bold;
+}
+
+// Scale Font Sizes
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: 0.6rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.6rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1rem;
+  }
 }
