@@ -59,6 +59,16 @@
     <!-- Bootstrap and FontAwesome is mixed into our app.css -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J2HZSGX4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-58J2HZSGX4');
+    </script>
+
     @yield('css')
 </head>
 <body class="language-php" style="width:100%;">
