@@ -1,0 +1,80 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 6%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Color Palette
+// Logo Colors
+$fsm-white: #f5f8fa;
+$fsm-lt-green: #86A850;
+$fsm-dk-green: #638E30;
+$fsm-lt-blue: #8DA8B9;
+$fsm-dk-blue: #4B708A;
+// Other Colors
+$fsm-shaded-spruce: #005960;
+$fsm-autumn-maple: #d2691e;
+$fsm-butterum: #c48f65;
+$fsm-neutral-gray: #898e8c;
+$fsm-marina: #4f84c4;
+$fsm-golden-lime: #9c9a40;
+$fsm-tawny-port: #672e3b;
+$fsm-navy-peony: #223a5e;
+$fsm-black: #000000;
+$fsm-red: #b52423;
+$fsm-lt-red: #b9636b;
+
+
+// Status Colors
+$fsm-unscheduled: $fsm-autumn-maple;
+$fsm-scheduled-pending: $fsm-autumn-maple;
+$fsm-scheduled-approved: $fsm-marina;
+$fsm-dispatched: $fsm-dk-blue;
+$fsm-inprogress: $fsm-dk-green;
+$fsm-completed: $fsm-shaded-spruce;
+$fsm-closed: $fsm-navy-peony;
+$fsm-canceled: $fsm-red;
+
+// Bootstrap Colors
+$fsm-primary: $fsm-navy-peony;
+$fsm-info: $fsm-marina;
+$fsm-success: $fsm-lt-green;
+$fsm-warning: $fsm-autumn-maple;
+$fsm-danger: $fsm-red;
+
+// Convienience
+$fsm-error: $fsm-danger;
+
+// Bootstrap Overrides
+$primary: $fsm-primary;
+$secondary: $fsm-info;
+$info: $fsm-info;
+$success: $fsm-success;
+$warning: $fsm-warning;
+$danger: $fsm-danger;
+
+// Typography
+$icon-font-path: "node_modules/font-awesome/fonts/";
+$font-family-sans-serif: "Arial", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+$text-color: lighten($fsm-black,20%);
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;

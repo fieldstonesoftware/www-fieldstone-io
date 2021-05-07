@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ isset($title) ? $title . ' - ' : null }}Fieldstone - The HVAC Service Management Platform</title>
+    @if(View::hasSection('title'))
+        <title>@yield('title') - Fieldstone</title>
+    @else
+        <title>{{ isset($title) ? $title . ' - ' : null }}Fieldstone - The HVAC Service Management Platform</title>
+    @endif
+
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     @if (isset($canonical))
@@ -27,87 +32,48 @@
     <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('img/favicon/apple-icon-152x152.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon/apple-icon-180x180.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('img/favicon/apple-icon-precomposed.png') }}">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#7952b3">
 
-    <!-- Load fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 
     <!-- Load styles -->
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
-    <!-- Load JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Bootstrap and FontAwesome is mixed into our app.css -->
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
+    @yield('css')
 </head>
-<body class="language-php">
+<body class="language-php" style="width:100%;">
 
-@yield('content')
+@include('partials.header')
 
-<footer>
-    <div class="footer_contain" style="padding-top: 0;">
-        <div class="contain">
-            <section class="partner_block">
-                <div class="content">
-                    <h2>Sign Up</h2>
-                    <p>Join the other early adopters!</p>
-                </div>
-                <a href="https://pro.fieldstone.io/register" class="btn"><span>Sign Up</span></a>
-            </section>
-        </div>
+<main style="width:100%;">
+    @yield('content')
+</main>
 
-        <div class="footer_bg">
-            <div class="contain">
-                <div class="footer_content">
-                    <div class="logotype">
-                        <img src="/img/logotype.min.svg" alt="Fieldstone">
-                    </div>
-                    <div class="search_box">
-                        {{-- Just a placeholder--}}
-                    </div>
-                </div>
-                <div class="footer_content">
-                    <div class="footer_nav">
-                        <div class="nav_col">
-                            <span class="footer_nav_trigger">Popular Docs</span>
-                            <div class="footer_nav_contain">
-                                <ul>
-                                    <li><a href="/docs/{{DEFAULT_VERSION}}/jobs">Jobs</a></li>
-                                    <li><a href="/docs/{{DEFAULT_VERSION}}/hvacr-systems">HVACR Systems</a></li>
-                                    <li><a href="/docs/{{DEFAULT_VERSION}}/customers">Customers</a></li>
-                                    <li><a href="/docs/{{DEFAULT_VERSION}}/sites">Sites</a></li>
-                                    <li><a href="/docs/{{DEFAULT_VERSION}}/file-attachments">File Attachments</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer_info">
-                        <p class="small"></p>
-                        <p class="small">Fieldstone is a Cloud platform for small HVAC businesses that helps them organize daily operations so they can reduce paperwork and focus on serving their customers.</p>
-                        <p class="small copyright">Fieldstone is a Trademark of Fieldstone Software, LLC.<br>Copyright &copy; 2006-{{now()->format('Y')}} Fieldstone Software LLC.</p>
-                        <p class="small">
-                            <a href="/docs/{{DEFAULT_VERSION}}/legal-terms-of-use">Terms of Use</a>
-                            &nbsp;&nbsp;<a href="/docs/{{DEFAULT_VERSION}}/legal-privacy-policy">Privacy Policy</a>
-                        </p>
-                        <ul class="social_links">
-                            <li><a target="_blank" href="https://www.facebook.com/fieldstonesm/"><img src="/img/social/facebook.min.svg" alt="Facebook"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="/" class="logomark"><img src="/img/logomark.min.svg" alt="Fieldstone"></a>
-    </div>
-</footer>
+@include('partials.footer')
 
-<script>
-    {{--var algolia_app_id = '{{ config('algolia.connections.main.id', false) }}';--}}
-    {{--var algolia_search_key = '{{ config('algolia.connections.main.search_key', false) }}';--}}
-    {{--var version = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';--}}
-</script>
-
-{{--@include('partials.algolia_template')--}}
-
-<script src="{{ mix('js/app.js') }}"></script>
+{{--Includes Bootstrap--}}
+<script src="{{ mix('/js/manifest.js') }}"></script>
+<script src="{{ mix('/js/app.js') }}"></script>
 
 <script>
     // var _gaq=[['_setAccount','xxxxxxxxx'],['_trackPageview']];
@@ -117,5 +83,6 @@
     //     s.parentNode.insertBefore(g,s)
     // }(document,'script'));
 </script>
+@yield('scripts')
 </body>
 </html>

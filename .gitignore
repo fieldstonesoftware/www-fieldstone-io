@@ -3,6 +3,9 @@
 /public/js
 /public/css
 /public/storage
+/public/mix-manifest.json
+/public/fonts
+/public/images/intl-tel-input
 /storage/*.key
 /vendor
 /.idea

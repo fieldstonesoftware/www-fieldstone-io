@@ -1,28 +1,523 @@
-// Mixins
 
-    @import "mixins";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons");
+@import "variables";
+$font-family-sans-serif: 'Roboto-Medium', sans-serif;
 
-// Embed boilerplate stylesheets - This imports the reset, and most form elements.
+@import "node_modules/bootstrap/scss/bootstrap";
 
-	@import "normalize";
-	@import "colors";
-	@import "typography";
-	@import "inputs";
-    @import "select";
-    @import "pages";
-    @import "base";
-    @import "remodal";
-    @import "ui_kit";
-    @import "prism";
+@import "node_modules/font-awesome/scss/font-awesome";
 
-// Site styles
+body, html {
+  height: 100%;
+}
 
-    @import "styles";
-    @import "header";
-    @import "footer";
-    @import "standard_layout";
-    @import "partners";
-    @import "sidebar_layout";
-    @import "docs";
-    @import "search";
-    @import "carbon_ads";
+.font-fixed {
+  font-family: "Courier";
+}
+
+.flash-message p{
+  margin: 0;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+
+.text-overflow {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break:break-word;
+
+  -ms-hyphens:auto;
+  -moz-hyphens:auto;
+  -webkit-hyphens:auto;
+  hyphens: auto;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*Generic Top*/
+.hl-top-fsm-primary {
+  border-top: 3px solid $fsm-primary !important;
+}
+
+.hl-top-fsm-info {
+  border-top: 3px solid $fsm-info !important;
+}
+
+.hl-top-fsm-success {
+  border-top: 3px solid $fsm-success !important;
+}
+
+.hl-top-fsm-warning {
+  border-top: 3px solid $fsm-warning !important;
+}
+
+.hl-top-fsm-error {
+  border-top: 3px solid $fsm-error !important;
+}
+
+/*Generic Bottom*/
+.hl-bottom-fsm-primary {
+  border-bottom: 3px solid $fsm-primary !important;
+}
+
+.hl-bottom-fsm-info {
+  border-bottom: 3px solid $fsm-info !important;
+}
+
+.hl-bottom-fsm-success {
+  border-bottom: 3px solid $fsm-success !important;
+}
+
+.hl-bottom-fsm-warning {
+  border-bottom: 3px solid $fsm-warning !important;
+}
+
+.hl-bottom-fsm-error {
+  border-bottom: 3px solid $fsm-error !important;
+}
+
+/*Generic Left*/
+.hl-left-fsm-primary {
+  border-left: 3px solid $fsm-primary !important;
+}
+
+.hl-left-fsm-info {
+  border-left: 3px solid $fsm-info !important;
+}
+
+.hl-left-fsm-success {
+  border-left: 3px solid $fsm-success !important;
+}
+
+.hl-left-fsm-warning {
+  border-left: 3px solid $fsm-warning !important;
+}
+
+.hl-left-fsm-error {
+  border-left: 3px solid $fsm-error !important;
+}
+
+.color-fsm-red {
+  color: $fsm-red !important;
+}
+
+/* Text Color for Work Order Status */
+.color-fsm-unscheduled {
+  color: $fsm-unscheduled !important;
+}
+
+.color-fsm-scheduled-pending {
+  color: $fsm-scheduled-pending !important;
+}
+
+.color-fsm-scheduled-approved {
+  color: $fsm-scheduled-approved !important;
+}
+
+.color-fsm-dispatched {
+  color: $fsm-dispatched !important;
+}
+
+.color-fsm-inprogress {
+  color: $fsm-inprogress !important;
+}
+
+.color-fsm-completed {
+  color: $fsm-completed !important;
+}
+
+.color-fsm-canceled {
+  color: $fsm-canceled !important;
+}
+
+/*Border Left - Work Order Status*/
+.hl-left-fsm-unscheduled {
+  border-left: 3px solid $fsm-unscheduled !important;
+}
+
+.hl-left-fsm-scheduled-pending {
+  border-left: 3px solid $fsm-scheduled-pending !important;
+}
+
+.hl-left-fsm-scheduled-approved {
+  border-left: 3px solid $fsm-scheduled-approved !important;
+}
+
+.hl-left-fsm-dispatched {
+  border-left: 3px solid $fsm-dispatched !important;
+}
+
+.hl-left-fsm-inprogress {
+  border-left: 3px solid $fsm-inprogress !important;
+}
+
+.hl-left-fsm-completed {
+  border-left: 3px solid $fsm-completed !important;
+}
+
+.hl-left-fsm-canceled {
+  border-left: 3px solid $fsm-canceled !important;
+}
+
+/*Border Bottom - Work Order Status*/
+.hl-bottom-fsm-unscheduled {
+  border-bottom: 3px solid $fsm-unscheduled !important;
+}
+
+.hl-bottom-fsm-scheduled-pending {
+  border-bottom: 3px solid $fsm-scheduled-pending !important;
+}
+
+.hl-bottom-fsm-scheduled-approved {
+  border-bottom: 3px solid $fsm-scheduled-approved !important;
+}
+
+.hl-bottom-fsm-dispatched {
+  border-bottom: 3px solid $fsm-dispatched !important;
+}
+
+.hl-bottom-fsm-inprogress {
+  border-bottom: 3px solid $fsm-inprogress !important;
+}
+
+.hl-bottom-fsm-completed {
+  border-bottom: 3px solid $fsm-completed !important;
+}
+
+.hl-bottom-fsm-canceled {
+  border-bottom: 3px solid $fsm-canceled !important;
+}
+
+h1 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+h4,h5,h6 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+footer.footer {
+  border: none;
+}
+
+.bg-white {
+  background-color: $fsm-white !important;
+}
+
+.bg-shaded-spruce {
+  background-color: $fsm-shaded-spruce !important;
+}
+
+.bg-autumn-maple {
+  background-color: $fsm-autumn-maple !important;
+}
+
+.bg-butterum {
+  background-color: $fsm-butterum !important;
+}
+
+.bg-neutral-gray {
+  background-color: $fsm-neutral-gray !important;
+}
+
+.bg-marina {
+  background-color: $fsm-marina !important;
+}
+
+.bg-golden-lime {
+  background-color: $fsm-golden-lime !important;
+}
+
+.bg-tawny-port {
+  background-color: $fsm-tawny-port !important;
+}
+
+.bg-navy-peony {
+  background-color: $fsm-navy-peony !important;
+}
+
+.bg-red {
+  background-color: $fsm-red !important;
+}
+
+.bg-fsm-lt-green {
+  background-color: $fsm-lt-green;
+}
+
+.bg-fsm-lt-blue {
+  background-color: $fsm-lt-blue;
+}
+
+.bg-fsm-dk-green {
+  background-color: $fsm-dk-green;
+}
+
+.bg-fsm-dk-blue {
+  background-color: $fsm-dk-blue;
+}
+
+.color-white {
+  color: $fsm-white !important;
+}
+
+.color-shaded-spruce {
+  color: $fsm-shaded-spruce !important;
+}
+
+.color-autumn-maple {
+  color: $fsm-autumn-maple !important;
+}
+
+.color-butterum {
+  color: $fsm-butterum !important;
+}
+
+.color-neutral-gray {
+  color: $fsm-neutral-gray !important;
+}
+
+.color-marina {
+  color: $fsm-marina !important;
+}
+
+.color-golden-lime {
+  color: $fsm-golden-lime !important;
+}
+
+.color-tawny-port {
+  color: $fsm-tawny-port !important;
+}
+
+.color-navy-peony {
+  color: $fsm-navy-peony !important;
+}
+
+.color-red {
+  color: $fsm-red !important;
+}
+
+.color-fsm-lt-green {
+  color: $fsm-lt-green;
+}
+
+.color-fsm-lt-blue {
+  color: $fsm-lt-blue;
+}
+
+.color-fsm-dk-green {
+  color: $fsm-dk-green;
+}
+
+.color-fsm-dk-blue {
+  color: $fsm-dk-blue;
+}
+
+.border-1-fsm-lt-green {
+  border: 1px solid $fsm-lt-green;
+}
+
+.border-1-fsm-lt-blue {
+  border: 1px solid $fsm-lt-blue;
+}
+
+.border-1-fsm-dk-green {
+  border: 1px solid $fsm-dk-green;
+}
+
+.border-1-fsm-dk-blue {
+  border: 1px solid $fsm-dk-blue;
+}
+
+.border-2-fsm-lt-green {
+  border: 2px solid $fsm-lt-green;
+}
+
+.border-2-fsm-lt-blue {
+  border: 2px solid $fsm-lt-blue;
+}
+
+.border-2-fsm-dk-green {
+  border: 2px solid $fsm-dk-green;
+}
+
+.border-2-fsm-dk-blue {
+  border: 2px solid $fsm-dk-blue;
+}
+
+.unapproved-alert {
+  color: $fsm-lt-red;
+  font-weight: bold;
+}
+
+.checkbox {
+  margin-top: 0.5em;
+}
+
+.checkbox label {
+  display:inline-block;
+  padding:0;
+  margin:0;
+  margin-bottom:0.25em;
+}
+
+input {
+  border: 1px solid $fsm-neutral-gray;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance:none;
+  width:30px;
+  height:30px;
+  background: $fsm-white;
+  border-radius:5px;
+  border:2px solid $fsm-neutral-gray;
+  vertical-align:bottom;
+  position:relative;
+  top:-1px;
+  overflow:hidden;
+}
+
+input[type='checkbox']:checked {
+  background: $fsm-dk-green;
+  border:2px solid $fsm-black;
+}
+
+th {
+  border-top:none !important;
+}
+
+nav {
+  background-color: $navbar-default-bg;
+  border-bottom: 1px solid $navbar-default-border;
+}
+
+.nav-item {
+  font-family: $font-family-sans-serif;
+}
+
+a.btn .btn-outline{
+  color: $fsm-primary !important;
+}
+
+a.btn .btn-outline:hover {
+  color: $fsm-white !important;
+}
+
+.txt-line-through {
+  text-decoration: line-through;
+}
+
+/* DataTables overrides */
+.dataTables_filter input {
+  font-size:18px;
+  border-color: $fsm-primary;
+  border-radius: 3px;
+  width:225px;
+}
+
+.dataTables_paginate .current {
+  background: none !important;
+  border-color: $fsm-primary !important;
+}
+/* DataTables overrides */
+
+.popover {
+  max-width:100%;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+/*
+ * Styles from the bootstrap sample for a product
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: $fsm-lt-green;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: $fsm-neutral-gray;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+#docs-nav ul{
+  list-style-type: none;
+  padding-left:1em;
+}
+
+#docs-nav ul li{
+  margin-right: 0.5em;
+}
+
+#docs-nav ul li a{
+  text-decoration: none; /* no underline */
+  color: $fsm-dk-blue; /* dark blue */
+}
+
+#docs-nav ul li a:hover, #docs-nav ul li a:focus {
+  color: black;
+  font-weight: bold;
+}

@@ -11,7 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
-mix
-    .js('resources/js/app.js', 'public/js/app.js')
-    .sass('resources/sass/app.scss', 'public/css')
+mix.sass('resources/sass/app.scss', 'public/css')   // app.css
+    .options({
+        postCss: [
+            require('autoprefixer')
+        ]
+    })
+    .copy('node_modules/intl-tel-input/build/css/intlTelInput.css', 'public/css/intl-tel-input/intlTelInput.css')
+    .copy('node_modules/intl-tel-input/build/img/*', 'public/images/intl-tel-input')
+    .copy('node_modules/intl-tel-input/build/js/*', 'public/js/intl-tel-input')
+    .js('resources/js/app.js','public/js/app.js').vue()
+    .extract(["axios","vue","bootstrap"])
     .version();
