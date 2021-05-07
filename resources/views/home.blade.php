@@ -116,7 +116,7 @@
 
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-8 p-lg-5 mx-auto my-5">
-            <h1 class="h2 fw-normal text-uppercase">Explanatory Paragraph</h1>
+            <h1 class="h2 fw-normal text-uppercase">Stop stressing out and try Fieldstone</h1>
             <p class="lead fw-normal">
                 At Fieldstone, we know that you want to be the leader of a profitable and successful business. In order
                 to do that, you need to know your numbers and keep your team coordinated. When you don’t, you end up
