@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    {{-- CSRF Token--}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     @if(View::hasSection('title'))
         <title>@yield('title') - Fieldstone</title>
@@ -14,6 +16,7 @@
     @if (isset($canonical))
     <link rel="canonical" href="{{ url($canonical) }}">
     @endif
+
 
     <!-- Favicon -->
     <meta name="google" content="notranslate">
@@ -59,6 +62,38 @@
     <!-- Bootstrap and FontAwesome is mixed into our app.css -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
+    @yield('css')
+</head>
+<body class="language-php" style="width:100%;">
+    <a id="top"></a>
+    <div id="app">
+        @include('partials.header')
+
+        <main style="width:100%;">
+            @yield('content')
+        </main>
+
+        @include('partials.footer')
+    </div>
+
+    {{--Includes Bootstrap--}}
+    <script src="{{ mix('/js/manifest.js') }}"></script>
+    <script src="{{ mix('/js/vendor.js') }}"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
+
+    @yield('scripts')
+    <script>
+        function isMobile(){
+            return ( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
+        }
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        });
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J2HZSGX4"></script>
     <script>
@@ -68,31 +103,5 @@
 
         gtag('config', 'G-58J2HZSGX4');
     </script>
-
-    @yield('css')
-</head>
-<body class="language-php" style="width:100%;">
-
-@include('partials.header')
-
-<main style="width:100%;">
-    @yield('content')
-</main>
-
-@include('partials.footer')
-
-{{--Includes Bootstrap--}}
-<script src="{{ mix('/js/manifest.js') }}"></script>
-<script src="{{ mix('/js/app.js') }}"></script>
-
-<script>
-    // var _gaq=[['_setAccount','xxxxxxxxx'],['_trackPageview']];
-    // (function(d,t){
-    //     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    //     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    //     s.parentNode.insertBefore(g,s)
-    // }(document,'script'));
-</script>
-@yield('scripts')
 </body>
 </html>
