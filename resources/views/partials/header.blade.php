@@ -8,7 +8,7 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="btn btn-link" href="https://pro.fieldstone.io/login">Login</a>
-                <a class="btn btn-lg btn-primary ml-3 ml-md-5" href="https://pro.fieldstone.io/register">Free Trial!</a>
+                <a class="btn btn-lg btn-primary ml-3 ml-md-5" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
             </li>
         </ul>
     </nav>

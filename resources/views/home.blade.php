@@ -16,7 +16,7 @@
             <div class="text-white">
                 <h1 class="display-3">Field Service Management Software</h1>
                 <h2 class="lead">for Heating, Cooling and Plumbing Business</h2>
-                <a class="btn btn-primary btn-lg mt-3" href="https://pro.fieldstone.io/register" role="button">Start Free Trial!</a>
+                <a class="btn btn-primary btn-lg mt-3" href="https://pro.fieldstone.io/register" role="button">Start Free Trial Now</a>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
             <p class="lead fw-normal">How much business do you lose because you can't stay organized? How much profit
                 do you lose because your pricing is outdated? How many good employees leave because the stress at your
                 company is so high?</p>
-            <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+            <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
         </div>
         <div class="product-device shadow-sm d-none d-lg-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-lg-block"></div>
@@ -68,7 +68,7 @@
             <div class="my-3 py-3">
                 <h2 class="display-5">Clear Financials</h2>
                 <p class="lead">Mystery pricing is a thing of the past. When you use Fieldstone, you know the numbers for every job.</p>
-                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
             </div>
         </div>
         <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -84,7 +84,7 @@
             <h1 class="h2 fw-normal text-uppercase">We feel your pain and we're here to help.</h1>
             <p class="lead fw-normal">We work closely with a network of early adopters working side by side with them
             to get their businesses organized and ensure they're profitable.</p>
-            <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+            <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
         </div>
         <div class="product-device shadow-sm d-none d-lg-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-lg-block"></div>
@@ -103,7 +103,7 @@
                 <h2 class="display-5">Train Your Staff</h2>
                 <p class="lead">Video training and live webinars help prepare your team to go live and put Fieldstone
                 to work for your business.</p>
-                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
             </div>
         </div>
         <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -135,7 +135,7 @@
                 meantime, try our free loaded labor rate calculator. It may shock you to find out your true profitability
                 so you can stop underbidding jobs and instead earn what you’re worth.
             </p>
-            <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+            <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
         </div>
         <div class="product-device shadow-sm d-none d-lg-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-lg-block"></div>
@@ -147,7 +147,7 @@
                 <h2 class="display-5">30 Day Free Trial</h2>
                 <p class="lead">Try Fieldstone risk free for 30 days.</p>
                 <p class="lead">Free</p>
-                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
             </div>
         </div>
         <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -155,7 +155,7 @@
                 <h2 class="display-5">Price Books</h2>
                 <p class="lead">Full featured flat rate price books for your whole team.</p>
                 <p class="lead">Coming Soon!</p>
-                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
             </div>
         </div>
         <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -163,7 +163,7 @@
                 <h2 class="display-5">Job Management</h2>
                 <p class="lead">Describe Manage Jobs Plan</p>
                 <p class="lead">Coming Soon!</p>
-                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial!</a>
+                <a class="btn btn-lg btn-primary mt-3" href="https://pro.fieldstone.io/register">Start Free Trial Now</a>
             </div>
         </div>
     </div>
