@@ -1,14 +1,15 @@
 <footer class="container py-5">
     <div class="row">
         <div class="col-6 col-md">
-            <h5>Popular Features</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/jobs">Jobs</a></li>
-                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/hvacr-systems">HVACR Systems</a></li>
-                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/customers">Customers</a></li>
-                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/sites">Sites</a></li>
-                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/file-attachments">File Attachments</a></li>
-            </ul>
+            &nbsp;
+{{--            <h5>Popular Features</h5>--}}
+{{--            <ul class="list-unstyled text-small">--}}
+{{--                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/jobs">Jobs</a></li>--}}
+{{--                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/hvacr-systems">HVACR Systems</a></li>--}}
+{{--                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/customers">Customers</a></li>--}}
+{{--                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/sites">Sites</a></li>--}}
+{{--                <li><a class="link-secondary" href="/docs/{{DEFAULT_VERSION}}/file-attachments">File Attachments</a></li>--}}
+{{--            </ul>--}}
         </div>
         <div class="col-6 col-md">
             <h5>&nbsp;</h5>

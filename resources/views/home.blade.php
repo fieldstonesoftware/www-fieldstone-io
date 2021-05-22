@@ -3,7 +3,7 @@
 @section('content')
     {{--    <div class="p-5 text-center" style="--}}
     <div class="position-relative overflow-hidden text-center bg-light d-flex" style="
-        background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg');
+        background-image: url('/img/screenshots/hvac-price-list-screenshot.png');
         height: 500px;
         width:100%;
         background-position: center center !important;
@@ -13,9 +13,9 @@
         background-size: cover !important;
     ">
         <div class="d-flex justify-content-center align-items-center w-100">
-            <div class="text-white">
-                <h1 class="display-3">Field Service Management Software</h1>
-                <h2 class="lead">for Heating, Cooling and Plumbing Business</h2>
+            <div class="text-black p-2 px-5 border-2-fsm-dk-blue rounded-pill" style="background-color: rgba(232, 235, 237, 1)!important;">
+                <h1 class="display-3">Field Service Management App</h1>
+                <h2 class="lead">for HVAC and Plumbing Operations</h2>
                 <a class="btn btn-primary btn-lg mt-3" href="https://pro.fieldstone.io/register" role="button">Start Free Trial Now</a>
             </div>
         </div>
